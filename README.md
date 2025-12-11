@@ -91,6 +91,18 @@ To **enable Speaker. Diarization**, include your Hugging Face access token that 
 
 <h2 align="left" id="example">Usage 💬 (command line)</h2>
 
+对于Cuda 12.8
+conda create -p ./venv python=3.10
+conda activate ./venv
+pip install -e .
+pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
+pip install numpy==1.26.4
+whisperx audio.mp3 
+pip list
+doskey /history
+doskey /history > history.txt
+
+
 ### English
 
 Run whisper on example segment (using default params)
